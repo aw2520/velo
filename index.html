@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Velo is a Portfolio Landing Page" />
+    <meta name="keywords" content="velo, landing page, cv, portfolio, resume" />
+    <title>Velo | Portfolio</title>
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- Components Styles -->
+    <link rel="stylesheet" href="css/components/index.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+
+    <header class="header wrapper section d-flex">
+      <a href="/" class="header__logo"><span>Eng.</span>AW</a>
+      <button class="header__toggler btn" aria-label="Open Navigation Menu">
+        <i class="lni lni-menu-hamburger-1"></i>
+      </button>
+      <nav class="header__nav d-none">
+        <ul class="header__menu d-flex">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link header__menu-link--active">
+              Home
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#about" class="header__menu-link">About</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#projects" class="header__menu-link">Projects</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contact" class="header__menu-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Start Main -->
+    <main class="main">
+      <!-- Start Hero -->
+      <section
+        class="hero section wrapper d-flex flex-column"
+        aria-label="Hero Section"
+      >
+        <img
+          src="images/hero.png"
+          width="700"
+          height="700"
+          alt=""
+          class="hero__image fade-in"
+        />
+        <div class="hero__content">
+          <h1 class="hero__title h1 fade-in">
+            Hello, I'm Ahmed Wael Frontend Developer
+          </h1>
+          <ul class="header__social d-flex d-center">
+            <li class="header__social-item">
+              <a
+                href=""
+                class="header__social-link d-flex d-center"
+                aria-label="Facebook Link"
+              >
+                <i class="lni lni-facebook-square"></i>
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a
+                href=""
+                class="header__social-link d-flex d-center"
+                aria-label="Instagram Link"
+              >
+                <i class="lni lni-instagram"></i>
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a
+                href=""
+                class="header__social-link d-flex d-center"
+                aria-label="Linkedin Link"
+              >
+                <i class="lni lni-linkedin"></i>
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a
+                href=""
+                class="header__social-link d-flex d-center"
+                aria-label="Github Link"
+              >
+                <i class="lni lni-github"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="#about" class="hero__cta btn btn-primary fade-in"
+            >About Me</a
+          >
+        </div>
+      </section>
+
+      <!-- Start About -->
+      <section
+        class="about section wrapper d-flex flex-column"
+        aria-label="About Section"
+        id="about"
+      >
+        <img
+          src="images/hero.png"
+          width="700"
+          height="700"
+          alt=""
+          loading="lazy"
+          class="about__image fade-in"
+        />
+        <div class="about__content d-flex flex-column">
+          <div class="about__intro">
+            <h2 class="about__title h2">About Me</h2>
+            <p class="about__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Explicabo vero vel dolores fuga iure atque exercitationem
+              molestias saepe incidunt cupiditate?
+            </p>
+          </div>
+          <div class="about__skills fade-in">
+            <h3 class="about__skills-title h3">Skills</h3>
+            <ul class="about__skills-list d-grid">
+              <li class="about__skills-item d-flex">HTML</li>
+              <li class="about__skills-item d-flex">CSS</li>
+              <li class="about__skills-item d-flex">JavaScript</li>
+              <li class="about__skills-item d-flex">TypeScript</li>
+              <li class="about__skills-item d-flex">Tailwind</li>
+            </ul>
+          </div>
+          <div class="about__statistics fade-in">
+            <h3 class="about__statistics-title h3">Statistics</h3>
+            <div class="about__statistics-list d-grid">
+              <div class="about__statistics-item">
+                <h4 class="about__statistics-heading h4">
+                  Years Of Experience
+                </h4>
+                <span class="about__statistics-number" data-num="10">+</span>
+              </div>
+              <div class="about__statistics-item">
+                <h4 class="about__statistics-heading h4">Projects</h4>
+                <span class="about__statistics-number" data-num="50">+</span>
+              </div>
+              <div class="about__statistics-item">
+                <h4 class="about__statistics-heading h4">Clients</h4>
+                <span class="about__statistics-number" data-num="20">+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Start Projects -->
+    <section
+      class="projects section wrapper d-flex flex-column"
+      aria-label="Projects Section"
+      id="projects"
+    >
+      <div class="projects__intro fade-in">
+        <h2 class="projects__title h2">My Projects</h2>
+        <p class="projects__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <ul
+        class="projects__filters d-flex flex-column"
+        aria-label="Projects Filter"
+      >
+        <li class="projects__filters-item">
+          <!-- All Is a Default name Don't Rename It -->
+          <button
+            class="projects__filters-btn projects__filters-btn--active btn btn-sm btn-secondary"
+            data-filter="all"
+          >
+            All
+          </button>
+        </li>
+        <li class="projects__filters-item">
+          <button
+            class="projects__filters-btn btn btn-sm btn-secondary"
+            data-filter="web"
+          >
+            Web
+          </button>
+        </li>
+        <li class="projects__filters-item">
+          <button
+            class="projects__filters-btn btn btn-sm btn-secondary"
+            data-filter="mobile"
+          >
+            Mobile
+          </button>
+        </li>
+        <li class="projects__filters-item">
+          <button
+            class="projects__filters-btn btn btn-sm btn-secondary"
+            data-filter="design"
+          >
+            Design
+          </button>
+        </li>
+      </ul>
+      <div class="projects__list d-grid fade-in">
+        <figure class="projects__item" data-category="web">
+          <img
+            src="images/web-1.webp"
+            width="1500"
+            height="1000"
+            loading="lazy"
+            alt=""
+            class="projects__image"
+          />
+          <figcaption class="projects__content">
+            <h3 class="projects__content-title h3">Statistics Dashboard</h3>
+            <div class="projects__content-links d-flex flex-column">
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-link-2-angular-right"></i>Live Demo</a
+              >
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-code-1"></i>Source Code</a
+              >
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="projects__item" data-category="mobile">
+          <img
+            src="images/mobile-1.webp"
+            width="1500"
+            height="1000"
+            loading="lazy"
+            alt=""
+            class="projects__image"
+          />
+          <figcaption class="projects__content">
+            <h3 class="projects__content-title h3">Easy Travel Booking App</h3>
+            <div class="projects__content-links d-flex flex-column">
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-link-2-angular-right"></i>Application Link</a
+              >
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-code-1"></i>Source Code</a
+              >
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="projects__item" data-category="mobile">
+          <img
+            src="images/mobile-2.webp"
+            width="1500"
+            height="1000"
+            loading="lazy"
+            alt=""
+            class="projects__image"
+          />
+          <figcaption class="projects__content">
+            <h3 class="projects__content-title h3">Furniture Shopping</h3>
+            <div class="projects__content-links d-flex flex-column">
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-link-2-angular-right"></i>Application Link</a
+              >
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-code-1"></i>Source Code</a
+              >
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="projects__item" data-category="mobile">
+          <img
+            src="images/mobile-3.webp"
+            width="1500"
+            height="1000"
+            loading="lazy"
+            alt=""
+            class="projects__image"
+          />
+          <figcaption class="projects__content">
+            <h3 class="projects__content-title h3">Booking App</h3>
+            <div class="projects__content-links d-flex flex-column">
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-link-2-angular-right"></i>Application Link</a
+              >
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-code-1"></i>Source Code</a
+              >
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="projects__item" data-category="design">
+          <img
+            src="images/design-1.webp"
+            width="1500"
+            height="1000"
+            loading="lazy"
+            alt=""
+            class="projects__image"
+          />
+          <figcaption class="projects__content">
+            <h3 class="projects__content-title h3">UI & UX Post Image</h3>
+            <div class="projects__content-links d-flex flex-column">
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-link-2-angular-right"></i>Design Link</a
+              >
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="projects__item" data-category="design">
+          <img
+            src="images/design-2.webp"
+            width="1500"
+            height="1000"
+            loading="lazy"
+            alt=""
+            class="projects__image"
+          />
+          <figcaption class="projects__content">
+            <h3 class="projects__content-title h3">3D Design To Mobile</h3>
+            <div class="projects__content-links d-flex flex-column">
+              <a href="" class="projects__content-source d-flex d-center"
+                ><i class="lni lni-link-2-angular-right"></i>Design Link</a
+              >
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Start Contact -->
+    <section
+      class="contact section wrapper d-flex flex-column"
+      aria-label="Contact Section"
+      id="contact"
+    >
+      <div class="contact__intro fade-in">
+        <h2 class="contact__title h2">Contact Me</h2>
+        <p class="contact__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <form class="contact__form d-flex flex-column fade-in">
+        <input
+          type="text"
+          name="name"
+          aria-label="Your name"
+          placeholder="Your name"
+          class="contact__input"
+        />
+        <input
+          type="email"
+          name="email"
+          aria-label="Your Email"
+          placeholder="Your Email"
+          class="contact__input"
+        />
+        <input
+          type="tel"
+          name="tel-number"
+          aria-label="Your Phone"
+          placeholder="Your Phone"
+          class="contact__input"
+        />
+        <textarea
+          name="message"
+          aria-label="Enter Your Message"
+          placeholder="Enter Your Message"
+          class="contact__textarea"
+        ></textarea>
+        <button class="contact__submit btn btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="footer section wrapper d-flex flex-column d-center">
+      <ul class="footer__social d-flex d-center">
+        <li class="footer__social-item">
+          <a
+            href=""
+            class="footer__social-link d-flex d-center"
+            aria-label="Facebook Link"
+          >
+            <i class="lni lni-facebook-square"></i>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a
+            href=""
+            class="footer__social-link d-flex d-center"
+            aria-label="Instagram Link"
+          >
+            <i class="lni lni-instagram"></i>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a
+            href=""
+            class="footer__social-link d-flex d-center"
+            aria-label="Linkedin Link"
+          >
+            <i class="lni lni-linkedin"></i>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a
+            href=""
+            class="footer__social-link d-flex d-center"
+            aria-label="Github Link"
+          >
+            <i class="lni lni-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyrights">
+        <span class="footer__year"></span> Ahmed Wael. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Scripts File -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
