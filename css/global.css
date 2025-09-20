@@ -5,13 +5,16 @@
 
 :root {
   /* Brand Colors */
-  --color-primary: #f87171;
-  --color-secondary: #4a2f2f;
-  --bg-color: #1f1313;
-  --bg-color-alt: #2f1b1b;
-  --text-black: #4a2f2f;
-  --text-muted: #d1a3a3;
-  --text-white: #f9e4e4;
+
+  --color-primary: #ef4444;
+  --color-secondary: #7f1d1d;
+
+  --bg-color: #140909;
+  --bg-color-alt: #2a1212;
+
+  --text-black: #1a1a1a;
+  --text-muted: #e4bebe;
+  --text-white: #ffffff;
 
   /* Fonts */
   --font-family: "Poppins";

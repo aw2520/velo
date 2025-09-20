@@ -23,7 +23,7 @@
 }
 
 .header__toggler {
-  border: 2px solid var(--bg-color);
+  border: 2px solid var(--color-secondary);
   padding-inline: var(--space-3);
 }
 
