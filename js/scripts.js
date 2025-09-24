@@ -26,11 +26,12 @@ Array.from(headerLinks).forEach((link) => {
 
 // About Statistics Counter
 let statNumbers = document.querySelectorAll(".about__statistics-number");
+let counted = false; // to ensure counting runs only once
 
 const startCounting = () => {
   statNumbers.forEach((ele) => {
     let value = parseInt(ele.getAttribute("data-num"));
-    let symbol = ele.textContent.replace(/[0-9]/g, ""); // Keep non-numeric characters like "+"
+    let symbol = ele.textContent.replace(/[0-9]/g, ""); // Keep non-numeric chars like "+"
     let count = 0;
     let speed = 1000;
 
@@ -45,6 +46,20 @@ const startCounting = () => {
     updateCounter();
   });
 };
+
+// Helper function to check if an element is in viewport
+const isInViewport = (elem) => {
+  const rect = elem.getBoundingClientRect();
+  return rect.top <= window.innerHeight && rect.bottom >= 0;
+};
+
+// Scroll event listener
+window.addEventListener("scroll", () => {
+  if (!counted && [...statNumbers].some(isInViewport)) {
+    counted = true;
+    startCounting();
+  }
+});
 
 // Projects Filter
 let projectsFilterBtn = document.querySelectorAll(".projects__filters-btn");
