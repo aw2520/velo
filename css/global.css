@@ -170,33 +170,6 @@ textarea {
   justify-content: center;
 }
 
-/*================= Animations =================*/
-
-.fade-in {
-  opacity: 0;
-  transform: scale(0.7);
-  transition: transform 0.5s ease, opacity 0.7s ease;
-  will-change: transform, opacity;
-}
-
-.fade-in-down-start {
-  transform: scale(0.7);
-}
-
-.fade-in-down {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.fade-in-up-start {
-  transform: scale(0.7);
-}
-
-.fade-in-up {
-  opacity: 1;
-  transform: scale(1);
-}
-
 /*================= Layout Structure =================*/
 .section {
   background-color: var(--bg-color-alt);
