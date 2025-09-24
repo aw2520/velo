@@ -150,7 +150,7 @@ const observer = new IntersectionObserver(
     lastScrollY = window.scrollY;
   },
   {
-    threshold: 0.5,
+    threshold: 0.1,
   }
 );
 

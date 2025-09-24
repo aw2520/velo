@@ -99,9 +99,14 @@
               </a>
             </li>
           </ul>
-          <a href="#about" class="hero__cta btn btn-primary fade-in"
-            >About Me</a
-          >
+          <div class="hero__links d-flex flex-column">
+            <a href="#about" class="hero__cta btn btn-primary fade-in"
+              >About Me<i class="lni lni-angle-double-right"></i
+            ></a>
+            <a href="" class="hero__cta btn btn-secondary fade-in"
+              >Download CV<i class="lni lni-cloud-download"></i
+            ></a>
+          </div>
         </div>
       </section>
 
@@ -159,230 +164,235 @@
           </div>
         </div>
       </section>
-    </main>
 
-    <!-- Start Projects -->
-    <section
-      class="projects section wrapper d-flex flex-column"
-      aria-label="Projects Section"
-      id="projects"
-    >
-      <div class="projects__intro fade-in">
-        <h2 class="projects__title h2">My Projects</h2>
-        <p class="projects__description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-      </div>
-      <ul
-        class="projects__filters d-flex flex-column fade-in"
-        aria-label="Projects Filter"
+      <!-- Start Projects -->
+      <section
+        class="projects section wrapper d-flex flex-column"
+        aria-label="Projects Section"
+        id="projects"
       >
-        <li class="projects__filters-item">
-          <!-- All Is a Default name Don't Rename It -->
-          <button
-            class="projects__filters-btn projects__filters-btn--active btn btn-sm btn-secondary"
-            data-filter="all"
-          >
-            All
-          </button>
-        </li>
-        <li class="projects__filters-item">
-          <button
-            class="projects__filters-btn btn btn-sm btn-secondary"
-            data-filter="web"
-          >
-            Web
-          </button>
-        </li>
-        <li class="projects__filters-item">
-          <button
-            class="projects__filters-btn btn btn-sm btn-secondary"
-            data-filter="mobile"
-          >
-            Mobile
-          </button>
-        </li>
-        <li class="projects__filters-item">
-          <button
-            class="projects__filters-btn btn btn-sm btn-secondary"
-            data-filter="design"
-          >
-            Design
-          </button>
-        </li>
-      </ul>
-      <div class="projects__list d-grid">
-        <figure class="projects__item" data-category="web">
-          <img
-            src="images/web-1.webp"
-            width="1500"
-            height="1000"
-            loading="lazy"
-            alt=""
-            class="projects__image"
-          />
-          <figcaption class="projects__content">
-            <h3 class="projects__content-title h3">Statistics Dashboard</h3>
-            <div class="projects__content-links d-flex flex-column">
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-link-2-angular-right"></i>Live Demo</a
-              >
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-code-1"></i>Source Code</a
-              >
-            </div>
-          </figcaption>
-        </figure>
+        <div class="projects__intro fade-in">
+          <h2 class="projects__title h2">My Projects</h2>
+          <p class="projects__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <ul
+          class="projects__filters d-flex flex-column fade-in"
+          aria-label="Projects Filter"
+        >
+          <li class="projects__filters-item">
+            <!-- All Is a Default name Don't Rename It -->
+            <button
+              class="projects__filters-btn projects__filters-btn--active btn btn-sm btn-secondary"
+              data-filter="all"
+            >
+              All
+            </button>
+          </li>
+          <li class="projects__filters-item">
+            <button
+              class="projects__filters-btn btn btn-sm btn-secondary"
+              data-filter="web"
+            >
+              Web
+            </button>
+          </li>
+          <li class="projects__filters-item">
+            <button
+              class="projects__filters-btn btn btn-sm btn-secondary"
+              data-filter="mobile"
+            >
+              Mobile
+            </button>
+          </li>
+          <li class="projects__filters-item">
+            <button
+              class="projects__filters-btn btn btn-sm btn-secondary"
+              data-filter="design"
+            >
+              Design
+            </button>
+          </li>
+        </ul>
+        <div class="projects__list d-grid">
+          <figure class="projects__item fade-in" data-category="web">
+            <img
+              src="images/web-1.webp"
+              width="1500"
+              height="1000"
+              loading="lazy"
+              alt=""
+              class="projects__image"
+            />
+            <figcaption class="projects__content">
+              <h3 class="projects__content-title h4">Statistics Dashboard</h3>
+              <div class="projects__content-links d-flex flex-column">
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-link-2-angular-right"></i>Live Demo</a
+                >
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-code-1"></i>Source Code</a
+                >
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="projects__item" data-category="mobile">
-          <img
-            src="images/mobile-1.webp"
-            width="1500"
-            height="1000"
-            loading="lazy"
-            alt=""
-            class="projects__image"
-          />
-          <figcaption class="projects__content">
-            <h3 class="projects__content-title h3">Easy Travel Booking App</h3>
-            <div class="projects__content-links d-flex flex-column">
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-link-2-angular-right"></i>Application Link</a
-              >
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-code-1"></i>Source Code</a
-              >
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="projects__item fade-in" data-category="mobile">
+            <img
+              src="images/mobile-1.webp"
+              width="1500"
+              height="1000"
+              loading="lazy"
+              alt=""
+              class="projects__image"
+            />
+            <figcaption class="projects__content">
+              <h3 class="projects__content-title h4">
+                Easy Travel Booking App
+              </h3>
+              <div class="projects__content-links d-flex flex-column">
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-link-2-angular-right"></i>Application
+                  Link</a
+                >
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-code-1"></i>Source Code</a
+                >
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="projects__item" data-category="mobile">
-          <img
-            src="images/mobile-2.webp"
-            width="1500"
-            height="1000"
-            loading="lazy"
-            alt=""
-            class="projects__image"
-          />
-          <figcaption class="projects__content">
-            <h3 class="projects__content-title h3">Furniture Shopping</h3>
-            <div class="projects__content-links d-flex flex-column">
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-link-2-angular-right"></i>Application Link</a
-              >
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-code-1"></i>Source Code</a
-              >
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="projects__item fade-in" data-category="mobile">
+            <img
+              src="images/mobile-2.webp"
+              width="1500"
+              height="1000"
+              loading="lazy"
+              alt=""
+              class="projects__image"
+            />
+            <figcaption class="projects__content">
+              <h3 class="projects__content-title h4">Furniture Shopping</h3>
+              <div class="projects__content-links d-flex flex-column">
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-link-2-angular-right"></i>Application
+                  Link</a
+                >
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-code-1"></i>Source Code</a
+                >
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="projects__item" data-category="mobile">
-          <img
-            src="images/mobile-3.webp"
-            width="1500"
-            height="1000"
-            loading="lazy"
-            alt=""
-            class="projects__image"
-          />
-          <figcaption class="projects__content">
-            <h3 class="projects__content-title h3">Booking App</h3>
-            <div class="projects__content-links d-flex flex-column">
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-link-2-angular-right"></i>Application Link</a
-              >
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-code-1"></i>Source Code</a
-              >
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="projects__item fade-in" data-category="mobile">
+            <img
+              src="images/mobile-3.webp"
+              width="1500"
+              height="1000"
+              loading="lazy"
+              alt=""
+              class="projects__image"
+            />
+            <figcaption class="projects__content">
+              <h3 class="projects__content-title h4">Booking App</h3>
+              <div class="projects__content-links d-flex flex-column">
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-link-2-angular-right"></i>Application
+                  Link</a
+                >
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-code-1"></i>Source Code</a
+                >
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="projects__item" data-category="design">
-          <img
-            src="images/design-1.webp"
-            width="1500"
-            height="1000"
-            loading="lazy"
-            alt=""
-            class="projects__image"
-          />
-          <figcaption class="projects__content">
-            <h3 class="projects__content-title h3">UI & UX Post Image</h3>
-            <div class="projects__content-links d-flex flex-column">
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-link-2-angular-right"></i>Design Link</a
-              >
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="projects__item fade-in" data-category="design">
+            <img
+              src="images/design-1.webp"
+              width="1500"
+              height="1000"
+              loading="lazy"
+              alt=""
+              class="projects__image"
+            />
+            <figcaption class="projects__content">
+              <h3 class="projects__content-title h4">UI & UX Post Image</h3>
+              <div class="projects__content-links d-flex flex-column">
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-link-2-angular-right"></i>Design Link</a
+                >
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="projects__item" data-category="design">
-          <img
-            src="images/design-2.webp"
-            width="1500"
-            height="1000"
-            loading="lazy"
-            alt=""
-            class="projects__image"
-          />
-          <figcaption class="projects__content">
-            <h3 class="projects__content-title h3">3D Design To Mobile</h3>
-            <div class="projects__content-links d-flex flex-column">
-              <a href="" class="projects__content-source d-flex d-center"
-                ><i class="lni lni-link-2-angular-right"></i>Design Link</a
-              >
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
+          <figure class="projects__item fade-in" data-category="design">
+            <img
+              src="images/design-2.webp"
+              width="1500"
+              height="1000"
+              loading="lazy"
+              alt=""
+              class="projects__image"
+            />
+            <figcaption class="projects__content">
+              <h3 class="projects__content-title h4">3D Design To Mobile</h3>
+              <div class="projects__content-links d-flex flex-column">
+                <a href="" class="projects__content-source d-flex d-center"
+                  ><i class="lni lni-link-2-angular-right"></i>Design Link</a
+                >
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-    <!-- Start Contact -->
-    <section
-      class="contact section wrapper d-flex flex-column"
-      aria-label="Contact Section"
-      id="contact"
-    >
-      <div class="contact__intro fade-in">
-        <h2 class="contact__title h2">Contact Me</h2>
-        <p class="contact__description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-      </div>
-      <form class="contact__form d-flex flex-column fade-in">
-        <input
-          type="text"
-          name="name"
-          aria-label="Your name"
-          placeholder="Your name"
-          class="contact__input"
-        />
-        <input
-          type="email"
-          name="email"
-          aria-label="Your Email"
-          placeholder="Your Email"
-          class="contact__input"
-        />
-        <input
-          type="tel"
-          name="tel-number"
-          aria-label="Your Phone"
-          placeholder="Your Phone"
-          class="contact__input"
-        />
-        <textarea
-          name="message"
-          aria-label="Enter Your Message"
-          placeholder="Enter Your Message"
-          class="contact__textarea"
-        ></textarea>
-        <button class="contact__submit btn btn-primary">Send Message</button>
-      </form>
-    </section>
+      <!-- Start Contact -->
+      <section
+        class="contact section wrapper d-flex flex-column"
+        aria-label="Contact Section"
+        id="contact"
+      >
+        <div class="contact__intro fade-in">
+          <h2 class="contact__title h2">Contact Me</h2>
+          <p class="contact__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <form class="contact__form d-flex flex-column fade-in">
+          <input
+            type="text"
+            name="name"
+            aria-label="Your name"
+            placeholder="Your name"
+            class="contact__input"
+          />
+          <input
+            type="email"
+            name="email"
+            aria-label="Your Email"
+            placeholder="Your Email"
+            class="contact__input"
+          />
+          <input
+            type="tel"
+            name="tel-number"
+            aria-label="Your Phone"
+            placeholder="Your Phone"
+            class="contact__input"
+          />
+          <textarea
+            name="message"
+            aria-label="Enter Your Message"
+            placeholder="Enter Your Message"
+            class="contact__textarea"
+          ></textarea>
+          <button class="contact__submit btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </main>
 
     <!-- Start Footer -->
     <footer class="footer section wrapper d-flex flex-column d-center">

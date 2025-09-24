@@ -117,6 +117,11 @@ textarea {
   padding-inline: var(--space-5);
   padding-block: var(--space-3);
   transition: var(--transition);
+  gap: var(--space-2);
+}
+
+.btn i {
+  font-size: var(--fs-lg);
 }
 
 .btn-primary {
@@ -130,6 +135,7 @@ textarea {
 
 .btn-secondary {
   background-color: var(--bg-color);
+  color: var(--text-white);
 }
 
 .btn-secondary:hover {
