@@ -3,14 +3,14 @@
 :root {
   /* Brand Colors */
 
-  --color-primary: #fff;
-  --border-color: #87878733;
+  --color-primary: #ffffff; /* Pure white for contrast */
+  --border-color: #1a1a1a; /* Very dark gray for subtle borders */
 
-  --bg-color: #000;
-  --bg-color-alt: #101010;
+  --bg-color: #000000; /* Absolute black */
+  --bg-color-alt: #0d0d0d; /* Slightly lighter for sections or cards */
 
-  --text-black: #1a1a1a;
-  --text-muted: #737373;
+  --text-black: #1a1a1a; /* Light gray text for readability */
+  --text-muted: #888888; /* Muted gray for secondary text */
   --text-white: #ffffff;
 
   --font-family: "Poppins";
@@ -129,19 +129,9 @@ textarea {
   color: var(--text-black);
 }
 
-.btn-primary:hover {
-  background-color: var(--bg-color);
-  color: var(--text-white);
-}
-
 .btn-secondary {
   background-color: var(--bg-color);
   color: var(--text-white);
-}
-
-.btn-secondary:hover {
-  background-color: var(--color-primary);
-  color: var(--text-black);
 }
 
 .btn-sm {
