@@ -3,14 +3,14 @@
 :root {
   /* Brand Colors */
 
-  --color-primary: #ef4444;
-  --color-secondary: #7f1d1d;
+  --color-primary: #fff;
+  --border-color: #87878733;
 
-  --bg-color: #140909;
-  --bg-color-alt: #2a1212;
+  --bg-color: #000;
+  --bg-color-alt: #101010;
 
   --text-black: #1a1a1a;
-  --text-muted: #e4bebe;
+  --text-muted: #737373;
   --text-white: #ffffff;
 
   --font-family: "Poppins";
@@ -126,11 +126,12 @@ textarea {
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--text-white);
+  color: var(--text-black);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--bg-color);
+  color: var(--text-white);
 }
 
 .btn-secondary {
@@ -140,6 +141,7 @@ textarea {
 
 .btn-secondary:hover {
   background-color: var(--color-primary);
+  color: var(--text-black);
 }
 
 .btn-sm {
@@ -176,7 +178,7 @@ textarea {
   border-radius: var(--radius-md);
   padding-block: var(--space-8);
   margin-block-start: var(--space-4);
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--border-color);
 }
 
 .wrapper {
